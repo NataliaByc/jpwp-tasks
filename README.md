@@ -30,14 +30,22 @@ Możemy użyć **rustup component add rustfmt,** by dodać fmt, po czym używać
 
 ## Zadania
 
-### Zadanie 1 - neurony
+W tych zadaniach będziemy uzupełniać kod, na bazie przykładów z rust booka. W przypadku zadań programistycznych należy
+przesłać screenshot kodu oraz działania w konsoli.
+### Zadanie 1: (ml) neurony
 
 W tym zadaniu nie będziemy dotykać kodu. Tutaj celem jest powtórka z sieci neuronowych. Zakładając, że neuron się
 aktywuje, tj. ma wartość 1, jeśli suma (krawędzi wchodzących * ich wagi + biasu) jest większa od 0, stwórz bramkę NAND
 (patrz slajd 5).
 Narysuj ją w paint albo innym edytorze graficznym.
 
-### Zadanie 2 - rust
+### Zadanie 2: (rust) zgadywanie liczb
 
 Celem tego zadania będzie uzupełnienie gry w zgadywanie liczb tak by działała. W tym celu należy uzupełnić luki w kodzie
-w folderze zadanie 2. Kod jest na bazie rustbooka. 
+w folderze zadanie 2. Komputer losuje jakąś liczbę, a my mamy odgadnąć, jaka to liczba. Kod jest na bazie rustbooka. 
+
+### Zadanie 3: (rust) minigrep cz.1
+
+Celem tego zadania będzie uzupełnienie kodu programu minigrep. Program ten ma za zadanie wyszukiwać w plikach tekstowych
+podany przez nas wzorzec. W funkcji main wywołujemy funkcje, które są w osobnym pliku lib.rs.  Pierwszą z nich jest
+konfiguracja na bazie przekazanych parametrów, a drugą jest uruchomienie wyszukiwania z tą konfiguracją.
