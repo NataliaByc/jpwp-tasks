@@ -74,5 +74,5 @@ Po odpaleniu programu w ten sposób: **IGNORE_CASE=1 cargo run -- Ty poem.txt** 
 > Do tych pól malowanych zbożem rozmaitem,  
 > Gdzie bursztynowy świerzop, gryka jak śnieg biała,
 
-(Jeśli korzystamy z Powershella musimy to wywołać w ten sposób **$Env:IGNORE_CASE=1; cargo run -- to poem.txt**
+(Jeśli korzystamy z Powershella musimy to wywołać w ten sposób **$Env:IGNORE_CASE=1; cargo run -- Ty poem.txt**
 zmienną możemy potem usunąć za pomocą **Remove-Item Env:IGNORE_CASE** ) 
