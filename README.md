@@ -32,6 +32,7 @@ Możemy użyć **rustup component add rustfmt,** by dodać fmt, po czym używać
 
 W tych zadaniach będziemy uzupełniać kod, na bazie przykładów z rust booka. W przypadku zadań programistycznych należy
 przesłać screenshot kodu oraz działania w konsoli.
+
 ### Zadanie 1: (ml) neurony
 
 W tym zadaniu nie będziemy dotykać kodu. Tutaj celem jest powtórka z sieci neuronowych. Zakładając, że neuron się
@@ -42,26 +43,26 @@ Narysuj ją w paint albo innym edytorze graficznym.
 ### Zadanie 2: (rust) zgadywanie liczb
 
 Celem tego zadania będzie uzupełnienie gry w zgadywanie liczb tak by działała. W tym celu należy uzupełnić luki w kodzie
-w folderze zadanie 2. Komputer losuje jakąś liczbę, a my mamy odgadnąć, jaka to liczba. Kod jest na bazie rustbooka. 
+w folderze zadanie 2. Komputer losuje jakąś liczbę, a my mamy odgadnąć, jaka to liczba. Kod jest na bazie rustbooka.
 
 ### Zadanie 3: (rust) minigrep cz.1
 
 Celem tego zadania będzie uzupełnienie kodu programu minigrep. Program ten ma za zadanie wyszukiwać w plikach tekstowych
-podany przez nas wzorzec. W funkcji main wywołujemy funkcje, które są w osobnym pliku lib.rs.  Pierwszą z nich jest
-konfiguracja na bazie przekazanych parametrów, a drugą jest uruchomienie wyszukiwania z tą konfiguracją. W tym zadaniu musimy
-uzupełnić kod w funkcji config, tak by zwracała odpowiedni config. 
+podany przez nas wzorzec. W funkcji main wywołujemy funkcje, które są w osobnym pliku lib.rs. Pierwszą z nich jest
+konfiguracja na bazie przekazanych parametrów, a drugą jest uruchomienie wyszukiwania z tą konfiguracją. W tym zadaniu
+musimy
+uzupełnić kod w funkcji config, tak by zwracała odpowiedni config.
 
-W pliku poem.txt umieszczono Inwokację z Pana Tadeusza. 
+W pliku poem.txt umieszczono Inwokację z Pana Tadeusza.
 Po odpaleniu programu w ten sposób: **cargo run -- Ty poem.txt** powinien nam zwrócić linie:
 > I w Ostrej świecisz Bramie! Ty, co gród zamkowy  
 > Tymczasem, przenoś moją duszę utęsknioną
-
 
 ### Zadanie 4: (rust) minigrep cz.2
 
 Jest to konuuacja zadania 3. W tym zadaniu chcemy odczytać zmienną środowiskową IGNORE_CASE i na jej podstawie ustawić
 tą wartosć w configu (do structa który go przechowuje musimy dodać odpowiednie pole). Następnie, na podstawie tego pola
-chcemy zadecydować jaką metodę wywołać, używając match (preferowany sposób) lub np. if else. 
+chcemy zadecydować jaką metodę wywołać, używając match (preferowany sposób) lub np. if else.
 
 Po odpaleniu programu w ten sposób: **IGNORE_CASE=1 cargo run -- Ty poem.txt** powinien nam zwrócić linie:
 > Litwo, Ojczyzno moja! ty jesteś jak zdrowie;  
@@ -71,4 +72,7 @@ Po odpaleniu programu w ten sposób: **IGNORE_CASE=1 cargo run -- Ty poem.txt** 
 > Tymczasem, przenoś moją duszę utęsknioną  
 > Do tych pagórków leśnych, do tych łąk zielonych,  
 > Do tych pól malowanych zbożem rozmaitem,  
-> Gdzie bursztynowy świerzop, gryka jak śnieg biała,  
+> Gdzie bursztynowy świerzop, gryka jak śnieg biała,
+
+(Jeśli korzystamy z Powershella musimy to wywołać w ten sposób **$Env:IGNORE_CASE=1; cargo run -- to poem.txt**
+zmienną możemy potem usunąć za pomocą **Remove-Item Env:IGNORE_CASE** ) 
