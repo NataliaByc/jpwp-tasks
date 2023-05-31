@@ -48,4 +48,27 @@ w folderze zadanie 2. Komputer losuje jakąś liczbę, a my mamy odgadnąć, jak
 
 Celem tego zadania będzie uzupełnienie kodu programu minigrep. Program ten ma za zadanie wyszukiwać w plikach tekstowych
 podany przez nas wzorzec. W funkcji main wywołujemy funkcje, które są w osobnym pliku lib.rs.  Pierwszą z nich jest
-konfiguracja na bazie przekazanych parametrów, a drugą jest uruchomienie wyszukiwania z tą konfiguracją.
+konfiguracja na bazie przekazanych parametrów, a drugą jest uruchomienie wyszukiwania z tą konfiguracją. W tym zadaniu musimy
+uzupełnić kod w funkcji config, tak by zwracała odpowiedni config. 
+
+W pliku poem.txt umieszczono Inwokację z Pana Tadeusza. 
+Po odpaleniu programu w ten sposób: **cargo run -- Ty poem.txt** powinien nam zwrócić linie:
+> I w Ostrej świecisz Bramie! Ty, co gród zamkowy  
+> Tymczasem, przenoś moją duszę utęsknioną
+
+
+### Zadanie 4: (rust) minigrep cz.2
+
+Jest to konuuacja zadania 3. W tym zadaniu chcemy odczytać zmienną środowiskową IGNORE_CASE i na jej podstawie ustawić
+tą wartosć w configu (do structa który go przechowuje musimy dodać odpowiednie pole). Następnie, na podstawie tego pola
+chcemy zadecydować jaką metodę wywołać, używając match (preferowany sposób) lub np. if else. 
+
+Po odpaleniu programu w ten sposób: **IGNORE_CASE=1 cargo run -- Ty poem.txt** powinien nam zwrócić linie:
+> Litwo, Ojczyzno moja! ty jesteś jak zdrowie;  
+> Ile cię trzeba cenić, ten tylko się dowie,  
+> I w Ostrej świecisz Bramie! Ty, co gród zamkowy  
+> I zaraz mogłem pieszo, do Twych świątyń progu  
+> Tymczasem, przenoś moją duszę utęsknioną  
+> Do tych pagórków leśnych, do tych łąk zielonych,  
+> Do tych pól malowanych zbożem rozmaitem,  
+> Gdzie bursztynowy świerzop, gryka jak śnieg biała,  

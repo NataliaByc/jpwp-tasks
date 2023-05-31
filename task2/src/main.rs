@@ -16,17 +16,17 @@ fn main() {
             .read_line(&mut guess)
             .expect("Failed to read line");
 
-        /*let guess: u32 = match guess.trim().parse() {
-            //tutaj musimy uzupełnić matcha tak by w przypadku wartości Ok(liczba) przypisał tą liczbę do u32,
-            //a w przypadku Err() przeszedł do kolejnej iteracji całej pętli, tj. zrobił continue.
-        };*/
+        // let guess: u32 = match guess.trim().parse() {
+        //     tutaj musimy uzupełnić matcha tak by w przypadku wartości Ok(liczba) przypisał tą liczbę do u32,
+        //     a w przypadku Err() przeszedł do kolejnej iteracji całej pętli, tj. zrobił continue.
+        // };
 
         println!("You guessed: {guess}");
 
-        /*match guess.cmp(&secret_number) {
-            Ordering::Less => println!("Too small!"),
-            //uzupełnij pozostałe matche, tak by w przypadku gdy gracz zgadnie liczbę, program się przerwał za pomocą break
-            //a gdy liczba jest większa, to wypisuje "Too big!"
-        }*/
+        // match guess.cmp(&secret_number) {
+        //     Ordering::Less => println!("Too small!"),
+        //     uzupełnij pozostałe matche, tak by w przypadku gdy gracz zgadnie liczbę, program się przerwał za pomocą break
+        //     a gdy liczba jest większa, to wypisuje "Too big!"
+        // }
     }
 }
